@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animations/explicit_examples/list_animation.dart';
+import 'package:flutter_animations/explicit_examples/loading_animation.dart';
+import 'package:flutter_animations/explicit_examples/login_animation.dart';
 import 'package:flutter_animations/implicit_examples/animated_color_pallete.dart';
 import 'package:flutter_animations/implicit_examples/animated_shopping_cart_button.dart';
 import 'package:flutter_animations/implicit_examples/animated_tween_animation_builder_example.dart';
@@ -18,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const PulsatingCircleAnimation(),
+      home:  const RadialProgressAnimation(progress: 0.60, color: Colors.green,),
     );
   }
 }
